@@ -1,0 +1,69 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+font-family: 'Open Sans';
+
+}
+.Contenedor{
+    padding: 60px 0;
+    width: 90%;
+    max-width: 1000px;
+    margin: auto;
+    overflow: hidden;
+    display: flex;
+    justify-content: space-evenly;
+}
+.Titulo{
+    color: cornflowerblue;
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 60px;
+}
+header{
+    width: 100%;
+    height: 600px;
+    background: #373B44;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, hsla(217, 89%, 61%, 0.61), hsla(222, 11%, 24%, 0.664)),url(/Media/working-code.jpg),url(../Media/working-code.jpg);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, hsla(217, 89%, 61%, 0.61), hsla(222, 11%, 24%, 0.664)),url(/Media/working-code.jpg),url(../Media/working-code.jpg); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+background-size: cover;
+background-attachment: fixed;
+position: relative;
+
+}
+nav{
+    text-align: right;
+    padding: 30px 50px 0 0 ;
+}
+nav > a{
+    color: cornsilk;
+    font-weight: 300;
+    text-decoration: none;
+    margin-right: 10px;
+}
+nav > a:hover{
+    text-decoration: underline;
+
+}
+.square{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+header .Header{
+    display: flex;
+    height: 430px;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+    
+
+.MiImagen{
+    width: 30%;
+}
