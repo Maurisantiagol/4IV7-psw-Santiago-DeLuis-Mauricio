@@ -1,0 +1,124 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'New Tegomin', serif;
+  
+}
+
+a:link, a:visited {
+    text-decoration:none;
+    color: hsla(247, 45%, 40%, 0.801);
+}
+a:active, a:hover{
+    text-decoration:underline;
+    color: hsla(278, 100%, 18%, 0.644);
+}
+
+
+footer{
+    
+    background-color: rgb(93, 168, 158);
+    
+    
+    padding: 2rem 0px;
+    text-align: center;
+    font-size: 1.1rem;
+    position: relative;
+    width: 100%;
+    bottom: 0px;
+    color: #F5EBDC;
+    
+}
+.menu {
+  display: flex;
+  justify-content: center;
+}
+
+.menu li {
+  margin-right: 70px;
+}
+
+.menu a {
+  position: relative;
+  display: block;
+  overflow: hidden;
+}
+
+.menu a span {
+  transition: transform 0.2s ease-out;
+}
+
+.menu a span:first-child {
+  display: inline-block;
+  padding: 10px;
+}
+.freeTime{
+  justify-content: center;
+  align-content: center;
+}
+.menu a span:last-child {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transform: translateY(-100%);
+}
+
+.menu i {
+  font-size: 30px;
+}
+  
+  .menu a:hover span:first-child {
+    transform: translateY(100%);
+  }
+  
+  .menu a:hover span:last-child,
+  .menu[data-animation] a:hover span:last-child {
+    transform: none;
+  }
+  .menu[data-animation="to-top"] a span:last-child {
+    transform: translateY(100%);
+  }
+  
+  .menu[data-animation="to-top"] a:hover span:first-child {
+    transform: translateY(-100%);
+  }
+  ul {
+    list-style: none;
+   
+    border: brown;
+    
+  }
+  .maincontainer{
+    background: #1f4037;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #8fe2bc , #1f4037);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #8fe2bc, #1f4037); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+padding: 12rem;
+width: 100%;
+    padding-left: 11%;
+    padding-right: 11%;
+    text-align: justify;
+  }
+  .videoJuegos{
+    padding: 0;
+    width: 80%;
+    
+  }
+  body{
+    background: -webkit-linear-gradient(to right, #8fe2bc , #1d3d35);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #8fe2bc, #1d3d35); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  }
+  nav{
+      position: fixed;
+      left: 0;
+      top: 0;
+      right: 0;
+    
+      background-color: #0d9c9c7c;
+  }
