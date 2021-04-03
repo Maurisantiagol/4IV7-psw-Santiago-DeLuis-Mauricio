@@ -32,8 +32,8 @@ function contar(){
     var totmujeres=muj*100/total;
     var tothombres=hom*100/total;
     
-    document.formulario5.pormujeres.value=totmujeres;
-    document.formulario5.porhombres.value=tothombres;
+    document.formulario5.pormujeres.value=totmujeres.toFixed(2);
+    document.formulario5.porhombres.value=tothombres.toFixed(2);
 }
 
 function borrar(){
