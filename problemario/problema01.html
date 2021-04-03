@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Problema 1</title>
+    <link rel="stylesheet" href="../css/problemas.css">
+    <script src="../JS/problema01.js" ></script>
+      <!-- https://material.io/resources/icons/?style=baseline -->
+<link href="https://fonts.googleapis.com/css2?family=Material+Icons"
+rel="stylesheet">
+<!-- https://material.io/resources/icons/?style=outline -->
+<link href="https://fonts.googleapis.com/css2?family=Material+Icons+Outlined"
+rel="stylesheet">
+<!-- https://material.io/resources/icons/?style=round -->
+<link href="https://fonts.googleapis.com/css2?family=Material+Icons+Round"
+rel="stylesheet">
+<!-- https://material.io/resources/icons/?style=sharp -->
+<link href="https://fonts.googleapis.com/css2?family=Material+Icons+Sharp"
+rel="stylesheet">
+<!-- https://material.io/resources/icons/?style=twotone -->
+<link href="https://fonts.googleapis.com/css2?family=Material+Icons+Two+Tone"
+rel="stylesheet">
+</head>
+<body>
+    <nav><div class="barra"><a href="../problemario/problemas.html" class="a1">Regresar al Menu Principal </a></div></nav>
+    <p>
+        Se desea programar un formulario el cual sea capaz 
+        de calcular el interes al 2% mensual, sobre un capital
+        a invertir.
+
+    </p>
+
+    <form name="formulario" method="get" action="problema01.html">
+        <table >
+            <tr>
+                <td class="td_up" >Introduce la cantidad a invertir : $</td>
+                <td class="td_down" > <input type="text" name="cantidad"
+                onkeypress="return validarn(event)"> </td>
+            </tr>
+            <tr>
+                <td></td>
+                <td class="td_down"> <input type="button" value="Interes"
+                    name="enviar" onclick="interes()"> </td>
+            </tr>
+            <tr>
+                <td class="td_up" >Su saldo total con interés del 2% mensual es de:</td>
+                <td class="td_down"> <input type="text" name="sueldoti"
+                    id="cantidadti" readonly="readonly" 
+                    class="input_text"> </td>
+            </tr>
+            <tr>
+                <td></td>
+                <td class="td_down"> <input type="button" name="borrard" 
+                    value="Borrar" onclick="borrar()"> </td>
+            </tr>
+        </table>
+    </form>
+    <br>
+    <div class="contact">
+        <div>
+            <h1>Información de contacto</h1>
+        </div>
+        <p><span class="material-icons-outlined" >
+            phone
+            </span>Telefono: 5583648857</p>
+            <p><span class="material-icons-outlined">
+                facebook
+                </span><a href="https://www.facebook.com/profile.php?id=100009774423321">Mauricio Santiagol</a></p>
+            <p><span class="material-icons-outlined">
+                email
+                </span>Email:<a href="mailto:Santiagodeluismauricio@gmail.com">Santiagodeluismauricio@gmail.com</a></p>
+            </div> 
+    
+</body>
+</html>

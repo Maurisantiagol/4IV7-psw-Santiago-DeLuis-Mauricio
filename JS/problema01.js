@@ -17,6 +17,12 @@ function validarn(e){
 }
 
 function interes(){
+    if(formulario.cantidad.value.length == 0 || formulario.cantidad.value.length > 10) {
+        alert('Escribe una cantidad valida');
+        return;
+    }
+    
+   
 
     var valor = document.formulario.cantidad.value;
     var resultado = parseInt(valor);
