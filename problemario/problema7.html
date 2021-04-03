@@ -4,9 +4,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Problema 4</title>
+    <title>Problema 1</title>
     <link rel="stylesheet" href="../css/problemas.css">
-    <script src="../JS/problema10.js" ></script>
+    <script src="../JS/problema07.js" ></script>
       <!-- https://material.io/resources/icons/?style=baseline -->
 <link href="https://fonts.googleapis.com/css2?family=Material+Icons"
 rel="stylesheet">
@@ -26,30 +26,22 @@ rel="stylesheet">
 <body>
     <nav><div class="barra"><a href="../problemario/problemas.html" class="a1">Regresar al Menu Principal </a></div></nav>
     <p>
-        calcular la utilidad que un trabajador recibe en el reparto anual de utilidades si este se le asigna como un porcentaje de su salario mensual que depende de su antiguedad de la empresa de acuerdo con;
-
-        <br>menos de 1 año = 5% del salario
-        <br>1 año o mas y menos de 2 años = 7% del salario
-        <br>2 años o más y menos de 5 años = 10% del salario
-        <br>5 años o más y menos de 10 años = 15% del salario
-        <br>10 años o más = 20% del salario
+        Leer 2 numeros; si son igualesque los multiplique, si el primero es mayor que el segundo que los reste y si no que los sume
 
     </p>
 
-    <form name="formulario10" method="get" action="problema10.html">
+    <form name="formulario7" method="get" action="problema07.html">
         <table >
             <tr>
-                <td class="td_up" >Introduce tus meses trabajados</td>
-                <td class="td_down" > <input type="text" name="meses"
+                <td class="td_up" >Introduce tu primer numero</td>
+                <td class="td_down" > <input type="text" name="numero1"
                 onkeypress="return validarn(event)"> </td>
-                <td class="td_up" >meses</td>
             </tr>
             <tr>
-                <td class="td_up" >Introduce sueldo mensual</td>
-                <td class="td_down" > <input type="text" name="pago"
+                <td class="td_up" >Introduce tu segundo numero</td>
+                <td class="td_down" > <input type="text" name="numero2"
                 onkeypress="return validarn(event)"> </td>
             </tr>
-            
            
             
 
@@ -60,15 +52,18 @@ rel="stylesheet">
                     name="enviar" onclick="Calcular()"> </td>
             </tr>
             <tr>
+                <td class="td_up" >El resultado es de :</td>
+                <td class="td_down"> <input type="text" name="total"
+                    id="cantidadti" readonly="readonly" 
+                    class="input_text"> </td>
+                    <td class="td_up" >y los numeros se</td>
+                <td class="td_down"> <input type="text" name="operacion"
+                    id="cantidadti" readonly="readonly" 
+                    class="input_text"> </td>
+                   
                 
-                <td class="td_up" >Total de utilidad</td>
 
-            </tr>
-            <tr>
-                
-                    <td class="td_down"> <input type="text" name="total"
-                        id="cantidadti" readonly="readonly" 
-                        class="input_text"> </td>
+
             </tr>
             <tr>
                 <td></td>
