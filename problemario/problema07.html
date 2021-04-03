@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Problema 1</title>
+    <link rel="stylesheet" href="../css/problemas.css">
+    <script src="../JS/problema07.js" ></script>
+      <!-- https://material.io/resources/icons/?style=baseline -->
+<link href="https://fonts.googleapis.com/css2?family=Material+Icons"
+rel="stylesheet">
+<!-- https://material.io/resources/icons/?style=outline -->
+<link href="https://fonts.googleapis.com/css2?family=Material+Icons+Outlined"
+rel="stylesheet">
+<!-- https://material.io/resources/icons/?style=round -->
+<link href="https://fonts.googleapis.com/css2?family=Material+Icons+Round"
+rel="stylesheet">
+<!-- https://material.io/resources/icons/?style=sharp -->
+<link href="https://fonts.googleapis.com/css2?family=Material+Icons+Sharp"
+rel="stylesheet">
+<!-- https://material.io/resources/icons/?style=twotone -->
+<link href="https://fonts.googleapis.com/css2?family=Material+Icons+Two+Tone"
+rel="stylesheet">
+</head>
+<body>
+    <nav><div class="barra"><a href="../problemario/problemas.html" class="a1">Regresar al Menu Principal </a></div></nav>
+    <p>
+        Leer 2 numeros; si son igualesque los multiplique, si el primero es mayor que el segundo que los reste y si no que los sume
+
+    </p>
+
+    <form name="formulario7" method="get" action="problema07.html">
+        <table >
+            <tr>
+                <td class="td_up" >Introduce tu primer numero</td>
+                <td class="td_down" > <input type="text" name="numero1"
+                onkeypress="return validarn(event)"> </td>
+            </tr>
+            <tr>
+                <td class="td_up" >Introduce tu segundo numero</td>
+                <td class="td_down" > <input type="text" name="numero2"
+                onkeypress="return validarn(event)"> </td>
+            </tr>
+           
+            
+
+
+            <tr>
+                <td></td>
+                <td class="td_down"> <input type="button" value="Calcular"
+                    name="enviar" onclick="Calcular()"> </td>
+            </tr>
+            <tr>
+                <td class="td_up" >El resultado es de </td>
+                <td class="td_down"> <input type="text" name="total"
+                    id="cantidadti" readonly="readonly" 
+                    class="input_text"> </td>
+                    <td class="td_up" >y los numeros se </td>
+                <td class="td_down"> <input type="text" name="operacion"
+                    id="cantidadti" readonly="readonly" 
+                    class="input_text"> </td>
+                   
+                
+
+
+            </tr>
+            <tr>
+                <td></td>
+                <td class="td_down"> <input type="button" name="borrard" 
+                    value="Borrar" onclick="borrar()"> </td>
+            </tr>
+        </table>
+    </form>
+    <br>
+    <div class="contact">
+        <div>
+            <h1>Información de contacto</h1>
+        </div>
+        <p><span class="material-icons-outlined" >
+            phone
+            </span>Telefono: 5583648857</p>
+            <p><span class="material-icons-outlined">
+                facebook
+                </span><a href="https://www.facebook.com/profile.php?id=100009774423321">Mauricio Santiagol</a></p>
+            <p><span class="material-icons-outlined">
+                email
+                </span>Email:<a href="mailto:Santiagodeluismauricio@gmail.com">Santiagodeluismauricio@gmail.com</a></p>
+            </div> 
+    
+</body>
+</html>
