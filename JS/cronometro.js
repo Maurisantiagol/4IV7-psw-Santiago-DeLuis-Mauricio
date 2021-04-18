@@ -33,6 +33,7 @@ function iniciarContador() {
     }
 }
 
+
 function resetearContador() {
     verificador = false;
     tiempo = 0;
