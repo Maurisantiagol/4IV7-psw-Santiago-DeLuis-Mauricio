@@ -1,0 +1,49 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'New Tegomin', serif;
+  
+}
+.maincontainer{
+    background: #1f4037;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #8fe2bc , #1f4037);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #8fe2bc, #1f4037); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+padding: 12rem;
+width: 100%;
+    padding-left: 11%;
+    padding-right: 11%;
+    text-align: justify;
+  }
+  footer{
+    
+    background-color: rgb(93, 168, 158);
+    
+    
+    padding: 2rem 0px;
+    text-align: center;
+    font-size: 1.1rem;
+    position: relative;
+    width: 100%;
+    bottom: 0px;
+    color: #F5EBDC;
+  }
+  a:link, a:visited {
+    text-decoration:none;
+    color: hsla(247, 45%, 40%, 0.801);
+}
+a:active, a:hover{
+    text-decoration:underline;
+    color: hsla(278, 100%, 18%, 0.644);
+}
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 28/04/2021, 12:23:40 PM
+    Author     : mauri
+*/
+

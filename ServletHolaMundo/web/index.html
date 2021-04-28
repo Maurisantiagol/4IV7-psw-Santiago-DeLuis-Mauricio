@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Pagina de Registro</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="JS/validar.js" ></script>
+        
+        <link rel="stylesheet" href="css/servlet.css">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+    <!-- https://material.io/resources/icons/?style=baseline -->
+<link href="https://fonts.googleapis.com/css2?family=Material+Icons"
+rel="stylesheet">
+<!-- https://material.io/resources/icons/?style=outline -->
+<link href="https://fonts.googleapis.com/css2?family=Material+Icons+Outlined"
+rel="stylesheet">
+<!-- https://material.io/resources/icons/?style=round -->
+<link href="https://fonts.googleapis.com/css2?family=Material+Icons+Round"
+rel="stylesheet">
+<!-- https://material.io/resources/icons/?style=sharp -->
+<link href="https://fonts.googleapis.com/css2?family=Material+Icons+Sharp"
+rel="stylesheet">
+<!-- https://material.io/resources/icons/?style=twotone -->
+<link href="https://fonts.googleapis.com/css2?family=Material+Icons+Two+Tone"
+rel="stylesheet">
+    </head>
+    <body>
+        <div class="maincontainer" >
+            <form name="formulario" method="post"  
+                  action="Registro">
+                <label>Nombre:</label>
+                <input type="text" name="nombre"  >
+                <br>
+                <label>Apellido Paterno:</label>
+                <input type="text" name="appat"  >
+                <br>
+                <label>Apellido Materno:</label>
+                <input type="text" name="appmat"  >
+                <br>
+                <label>Edad:</label>
+                <input type="number" name="edad" min="01" max="99" 
+                       size="2"  >
+                <br>
+                <label>Correo:</label>
+                <input type="email" name="email"  >
+                <br>
+                <input type="submit" value="Enviar Datos de Registro" onclick="ValidarRegistro()">
+                <input type="reset" value="Borrar Registro">
+            </form>
+        
+        <br>
+        <div class="contendorConsultar">
+            <br>
+            <form method="get" name="formularioconsultar" action="Consultar2">
+                <input type="submit" value="Consultar Tabla General de Usuarios" >
+            </form>
+        </div>
+        <br>
+        <div class="contenedorEliminar" >
+            <br>
+            <form method="post" name="formularioeliminar" action="Eliminar">
+                <label>Ingresa el ID del usuario que deseas eliminar</label>
+                <input type="number" name="ideliminar" onclick="ValidarEliminar()" >
+                <input type="submit" value="Eliminar Usuario" >
+            </form>
+        </div>
+        <br>
+        <div class="contendorEditar">
+           <br>
+            
+                
+            
+            <form name="formulario2" method="post"  
+                  action="Editarfinal">
+                <label>Ingresa el ID a editar</label>
+                <input type="number" name="ideditar" >
+                <br>
+            
+                <label>Nombre:</label>
+                <input type="text" name="nombree"  >
+                <br>
+                <label>Apellido Paterno:</label>
+                <input type="text" name="appate"  >
+                <br>
+                <label>Apellido Materno:</label>
+                <input type="text" name="appmate"  >
+                <br>
+                <label>Edad:</label>
+                <input type="number" name="edade" min="01" max="99" 
+                       size="2"  >
+                <br>
+                <label>Correo:</label>
+                <input type="email" name="emaile"  >
+                <br>
+                <input type="submit" value="Editar Datos" onclick="ValidarEditar()">
+                <input type="reset" value="Borrar Registro">
+            </form>
+            
+        </div>
+        </div>
+        <footer>
+            <div>
+                <h1>Información de contacto</h1>
+            </div>
+            <p><span class="material-icons-outlined" >
+                phone
+                </span>Telefono: 5583648857</p>
+                <p><span class="material-icons-outlined">
+                    facebook
+                    </span><a href="https://www.facebook.com/profile.php?id=100009774423321">Mauricio Santiagol</a></p>
+                <p><span class="material-icons-outlined">
+                    email
+                    </span>Email:<a href="mailto:Santiagodeluismauricio@gmail.com">Santiagodeluismauricio@gmail.com</a></p>
+                   
+        </footer>
+    </body>
+</html>
